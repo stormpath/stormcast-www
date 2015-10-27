@@ -1,3 +1,12 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "https://stormca.st/"
+contentdir = "content"
+disableRSS = true
 languageCode = "en-us"
-title = "My New Hugo Site"
+layoutdir = "layouts"
+metaDataFormat: "yaml"
+publishdir = "public"
+title = "Stormcast"
+
+[params]
+  description = "The most awesome web security podcast. Coding, security, and lots of laughs."
+  subtitle = "The Most Awesome Web Security Podcast"

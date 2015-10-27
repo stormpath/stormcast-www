@@ -3,7 +3,7 @@ contentdir = "content"
 disableRSS = true
 languageCode = "en-us"
 layoutdir = "layouts"
-metaDataFormat: "yaml"
+metaDataFormat = "yaml"
 publishdir = "public"
 title = "Stormcast"
 

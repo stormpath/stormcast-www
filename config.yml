@@ -1,0 +1,16 @@
+baseurl: "https://stormca.st/"
+contentdir: "content"
+languageCode: "en-us"
+layoutdir: "layouts"
+metaDataFormat: "yaml"
+publishdir: "build"
+title: "Stormcast"
+
+params:
+  description: "The most awesome web security podcast. Coding, security, and lots of laughs."
+  subtitle: "The Most Awesome Web Security Podcast"
+  navLinks:
+    - title: "Twitter"
+    - url: "https://twitter.com/stormcast"
+    - title: "Google+"
+    - url: "https://twitter.com/stormcast"

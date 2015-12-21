@@ -1,0 +1,110 @@
+<!DOCTYPE html> <html lang="en">
+  {{ partial "head.html" . }}
+  <body>
+    <div class="container">
+      {{ partial "header.html" . }}
+      <div class="row">
+        <section class="intro col-xs-offset-1 col-xs-10 jumbotron">
+          <p>
+            Security is one of the biggest areas of confusion in the development
+            world.  Shit is complex.
+          </p>
+          <p>
+            This podcast is dedicated to covering all sorts of security topics for
+            programmers, and aims to provide practical, accurate, and most of all:
+            <i>enjoyable</i> information for anyone who loves writing code and
+            learning stuff.
+          </p>
+          <p>
+            This podcast is hosted by <a href="https://www.rdegges.com"
+              hreflang="{{ .Site.LanguageCode }}" title="Randall Degges">Randall
+              Degges</a> a Developer Evangelist @ <a href="https://stormpath.com" title="Stormpath">Stormpath</a>.
+          </p>
+        </section>
+      </div>
+      <div class="row">
+        <section class="row subscribe col-xs-offset-1 col-xs-10">
+          {{ partial "mailchimp-subscribe.html" . }}
+        </section>
+      </div>
+      <div class="row">
+        <section class="episodes col-xs-offset-1 col-xs-10">
+          <h2>Episodes</h2>
+          <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+              {{ range .Data.Pages }}
+                <a href="{{ .Permalink }}" hreflang="{{ .Site.LanguageCode }}" title="{{ .Site.Title }} - {{ .Title }}"><h3>{{ .Title }}</h3></a>
+                <div class="row">
+                  <div class="col-xs-3 hidden-xs">
+                    <img src="{{ .Params.image }}">
+                  </div>
+                  <div class="col-xs-12 col-sm-9">
+                    {{ .Content }}
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section class="questions col-xs-offset-1 col-xs-10">
+          <h2>Ask a Question!</h2>
+          <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+              <p>
+                Got a security or programming question you'd like to get answered
+                in an upcoming Stormcast episode? If so, submit it below and we'll
+                do our best to answer it on the show!
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+              <form class="form-inline" accept-charset="UTF-8" action="https://rdegges.wufoo.com/forms/ma8mps61v4v18h/#public" autocomplete="off" enctype="multipart/form-data" method="post">
+                <input type="hidden" name="idstamp" value="Vl500F+tLO157bpjrCTJINe24CeENLj4dWRrFDC+xDY=">
+                <textarea class="form-control" name="Field1" placeholder="Enter your question here." required></textarea>
+                <input class="form-control" name="Field6" placeholder="Your Name" type="text" required>
+                <button type="submit" class="btn btn-warning">Submit Question</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section class="sponsors col-xs-offset-1 col-xs-10">
+          <h2>Sponsors</h2>
+          <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+              <p class="sponsors-intro">
+                Stormcast is only made possible by our amazing sponsors. Please
+                check them out! They support the development community, the
+                security community, and this show!
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="hidden-xs col-xs-3">
+              <img alt="Stormpath Logo" src="{{ "/static/images/stormpath-logo.png" | absURL }}">
+            </div>
+            <div class="col-xs-9">
+              <p>
+                Stormpath is an <i>AMAZING</i> API service that stores user
+                accounts, groups, roles, and permissions for whatever software
+                you're currently building: websites, mobile apps, etc. You can
+                get started with Stormpath in minutes.
+              </p>
+              <p>
+                Go sign up right now!
+                <a href="https://stormpath.com/cast" hreflang="{{ .Site.LanguageCode }}" title="Stormpath!">https://stormpath.com/cast</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    {{ partial "footer.html" . }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>

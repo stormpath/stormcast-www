@@ -84,12 +84,22 @@ section.episodes img {
   max-width: 100%;
 }
 
+section.episodes h2 {
+  margin-bottom: 1em;
+}
+
 section.episodes a {
   text-decoration: none;
 }
 
 section.episodes h3 {
+  display: inline;
+  margin-left: .5em;
+}
+
+section .episode-holder {
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 

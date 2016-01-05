@@ -1,0 +1,37 @@
+<!DOCTYPE html> <html lang="en">
+  {{ partial "head.html" . }}
+  <body>
+    <div class="container">
+      {{ partial "header.html" . }}
+      <div class="row">
+        <section class="episode-meta col-xs-offset-1 col-xs-10">
+          <h2>Episode {{ upper .Title }}</h2>
+          <div class="row">
+            <div class="col-md-3 hidden-xs hidden-sm">
+              <img src="{{ .Params.image }}">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-9">
+              <h3>Published {{ dateFormat "Jan 02, 2006" .Date }}</h3>
+              <p><b>Summary:</b> {{ .Params.summary }}</p>
+              <audio preload="none" controls="" src="{{ .Params.cast }}"></audio>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="row">
+        <section class="episode-transcription col-xs-offset-1 col-xs-10">
+          <h4>Transcription</h4>
+          {{ .Content }}
+        </section>
+      </div>
+      <div class="row">
+        <section class="subscribe col-xs-offset-1 col-xs-10 hidden-xs">
+          {{ partial "mailchimp-subscribe.html" . }}
+        </section>
+      </div>
+    </div>
+    {{ partial "footer.html" . }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>

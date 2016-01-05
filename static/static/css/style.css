@@ -138,3 +138,20 @@ footer {
 .sponsors .sponsors-intro {
   margin-bottom: 2em;
 }
+
+/**
+ * Episode styling.
+ */
+.episode-meta h2 {
+  margin-bottom: 1em;
+}
+
+.episode-meta h3 {
+  margin-top: -.25em;
+}
+
+
+.episode-meta p {
+  margin-top: 1em;
+  font-style: italic;
+}

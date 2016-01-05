@@ -2,6 +2,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  {{ .Hugo.Generator }}
+  <meta content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" name="description">
+  <title>{{ .Site.Title }} - {{ if ne .Title "" }}{{ .Title }}{{ else }}{{ .Site.Params.subtitle }}{{ end }}</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/paper/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet" type="text/css">

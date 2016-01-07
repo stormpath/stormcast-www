@@ -2,7 +2,7 @@
 date: 2015-10-26T17:16:36-07:00
 title: 0x00 - WTF is OAuth
 image: /static/images/casts/jackie-chan-wtf.png
-cast: /static/casts/stormcast-episode-0x00-wtf-is-oauth.mp3
+cast: http://traffic.libsyn.com/thestormcast/stormcast-episode-0x00-wtf-is-oauth.mp3
 summary: >
   OAuth is a funky protocol. Seriously. Who even likes it? In this episode we'll
   discuss what, exactly, is up with OAuth, and why the hell people keep talking

@@ -2,7 +2,7 @@
 date: 2015-11-02T17:16:36-07:00
 title: 0x01 - Basic Auth
 image: /static/images/casts/bouncer-sketch.png
-cast: /static/casts/stormcast-episode-0x01-basic-auth.mp3
+cast: http://traffic.libsyn.com/thestormcast/stormcast-episode-0x01-basic-auth.mp3
 summary: >
   OMG. I love HTTP Basic Auth. More than my own children! (*I kid, I kid.*)
 

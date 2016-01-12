@@ -13,7 +13,7 @@
       {{ range $link := .Site.Params.navLinks }}
         <li><a href="{{ $link.url }}" hreflang="{{ $.Site.LanguageCode }}" media="all" title="{{ $.Site.Title }} - {{ $link.title }}" type="text/html"><i class="fa fa-3x {{ $link.class }}"></i></a></li>
       {{ end }}
-      <li><a href="{{ $.RSSLink }}" hreflang="{{ $.Site.LanguageCode }}" media="all" title="{{ $.Site.Title }} - RSS" type="application/rss+xml"><i class="fa fa-3x fa-rss"></i></a></li>
+      <li><a href="http://thestormcast.libsyn.com/rss" hreflang="{{ $.Site.LanguageCode }}" media="all" title="{{ $.Site.Title }} - RSS" type="application/rss+xml"><i class="fa fa-3x fa-rss"></i></a></li>
     </ul>
   </div>
 </header>

@@ -15,8 +15,12 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #444;
-  text-decoration: underline;
+  color: #2e3192;
+  text-decoration: none;
+}
+
+i.fa:hover {
+  color: #2e3192;
 }
 
 h1, h2, h3, h4, h5, h6 {
